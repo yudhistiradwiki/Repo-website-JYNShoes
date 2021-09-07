@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="shortcut icon" href="icon.png" type="image/png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Carousel -->
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.core.min.css" />
+    <link rel="stylesheet" href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css" />
+     <!-- Custom StyleSheet -->
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles2.css" />
+    <title>Keranjang Belanja</title>
+</head>
+
+<body>
+    <header id="header" class="header">
+        <div class="navigation">
+          <div class="container">
+            <nav class="nav">
+              <div class="nav__logo">
+                <a href="index.html" class="scroll-link">
+                  <i class="fa fa-cubes" aria-hidden="true"></i>JYN SHOES
+                </a>
+              </div>
+              <div class="nav__menu">
+                <ul class="nav__list">
+                  <li class="nav__item">
+                    <a href="index.html" class="nav__link scroll-link">Beranda</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="index.html#latest" class="nav__link scroll-link">Produk</a>
+                  </li>
+                  <li class="nav__item">
+                    <a href="index.html#contact" class="nav__link scroll-link">Kontak</a>
+                  </li>
+                </ul>
+              </div>
+    
+              <div class="nav__icons">
+                <a href="#" class="icon__item">
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>&nbsp
+                  <span id="cart__total">1</span>
+                </a>
+              </div>
+            </nav>
+          </div>
+        </div>
+
+        <div class="page__title-area">
+            <div class="container">
+                <div class="page__title-container">
+                    <ul class="page__titles">
+                        <li>
+                            <a href="index.html">
+                                <i class="fa fa-home" aria-hidden="true"></i>
+                            </a>
+                        </li>
+                        <li class="page__title">Keranjang</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main id="main">
+        <section class="section cart__area">
+            <div class="container">
+                <div class="responsive__cart-area">
+                    <form class="cart__form">
+                        <div class="cart__table table-responsive">
+                            <table width="100%" class="table">
+                                <thead>
+                                    <tr>
+                                        <th>PRODUK</th>
+                                        <th>NAMA</th>
+                                        <th>HARGA</th>
+                                        <th>JUMLAH</th>
+                                        <th>TOTAL HARGA</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="product__thumbnail">
+                                            <a href="product.html">
+                                                <img src="shoes3.png" alt="">
+                                            </a>
+                                        </td>
+                                        <td class="product__name">
+                                            <a href="product.html">Ventela Armor</a>
+                                            <br><br>
+                                            <small>Hitam/44</small>
+                                        </td>
+                                        <td class="product__price">
+                                            <div class="price">
+                                                <span class="new__price">Rp.250.000</span>
+                                            </div>
+                                        </td>
+                                        <td class="product__quantity">
+                                            <div class="input-counter">
+                                                <div>
+                                                    <span class="minus-btn">
+                                                        <i class="fa fa-minus" aria-hidden="true"></i>
+                                                    </span>
+                                                    <input type="text" min="1" value="1" max="10" class="counter-btn">
+                                                    <span class="plus-btn">
+                                                        <i class="fa fa-plus" aria-hidden="true"></i>
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                        <td class="product__subtotal">
+                                            <div class="price">
+                                                <span class="new__price">Rp.250.000</span>
+                                            </div>
+                                            <a href="#" class="remove__cart-item">
+                                                <i class="fa fa-trash" aria-hidden="true"></i>
+                                            </a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="cart-btns">
+                            <div class="continue__shopping">
+                                <a href="index.html#latest">Lanjutkan Belanja</a>
+                            </div>
+                        </div>
+
+                        <div class="cart__totals">
+                            <h3>Total Belanjaan</h3>
+                            <ul>
+                                <li>
+                                    Subtotal
+                                    <span class="new__price">Rp.250.000</span>
+                                </li>
+                                <li>
+                                    Ongkos Kirim
+                                    <span>Rp.0</span>
+                                </li>
+                                <li>
+                                    Total Harga
+                                    <span class="new__price">Rp.250.000</span>
+                                </li>
+                            </ul>
+                            <a href="index.html#latest">BAYAR BELANJAAN</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+</main>
+
+    <!-- Footer -->
+    <footer id="footer" class="section footer">
+        <div class="container">
+                <small>Copyright &copy; 2021 - JYN SHOES..</small>
+            </div>
+      </footer>
+    <!-- End Footer -->
+    <!-- Glide Carousel Script -->
+    <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="./js/products.js"></script>
+    <script src="./js/slider.js"></script>
+</body>
+
+</html>
